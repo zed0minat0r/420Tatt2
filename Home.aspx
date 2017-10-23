@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
 <!DOCTYPE html>
 <html>
@@ -250,7 +250,7 @@
                             <li class="filter" data-filter="all"><span>All</span></li>
                             <li class="filter" data-filter="Pipes"><span>Pipes</span></li>
                             <li class="filter" data-filter="WaterPipes"><span>Water Pipes</span></li>
-                            <li class="filter" data-filter="E-Juice / Vape"><span>E-Juice / Vape</span></li>
+                            <li class="filter" data-filter="Vape"><span>E-Juice / Vape</span></li>
                             <li class="filter" data-filter="Misc"><span>Misc</span></li>
                         </ul>
                     </div>
@@ -289,10 +289,10 @@
                              <div class="col-md-3 col-sm-6 project-item mix Pipes">
                                 <div class="thumb">
                                     <div class="image">
-                                        <img src="img/Misc9.JPG">
+                                        <img src="img/bongs.JPG">
                                     </div>
                                     <div class="hover-effect">
-                                        <a href="img/Misc9.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                        <a href="img/bongs.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -326,26 +326,81 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 project-item mix workspace">
+                           
+                            <div class="col-md-3 col-sm-6 project-item mix WaterPipes">
                                 <div class="thumb">
                                     <div class="image">
-                                        <img src="img/portfolio_07.jpg">
+                                        <img src="img/IMG_0416.JPG">
                                     </div>
                                     <div class="hover-effect">
-                                        <a href="img/portfolio_big_07.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                        <a href="img/IMG_0416.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6 project-item mix city">
+
+                             <div class="col-md-3 col-sm-6 project-item mix Vape">
                                 <div class="thumb">
                                     <div class="image">
-                                        <img src="img/portfolio_08.jpg">
+                                        <img src="img/Misc2.JPG">
                                     </div>
                                     <div class="hover-effect">
-                                        <a href="img/portfolio_big_08.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                        <a href="img/Misc2.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
                                     </div>
                                 </div>
                             </div>
+                             <div class="col-md-3 col-sm-6 project-item mix Vape">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/Misc3.JPG">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/Misc3.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-3 col-sm-6 project-item mix Misc">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/Misc4.JPG">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/Misc4.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-3 col-sm-6 project-item mix Misc">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/Misc5.JPG">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/Misc5.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix Misc">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/Misc6.JPG">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/Misc6.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix Misc">
+                                <div class="thumb">
+                                    <div class="image">
+                                        <img src="img/Misc7.JPG">
+                                    </div>
+                                    <div class="hover-effect">
+                                        <a href="img/Misc7.JPG" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                        
                         </div>
                     </div>
                 </div>
@@ -386,25 +441,25 @@
                 <div class="col-md-6">
 
                     <div class="row">
-                        <form id="frmContact" runat="server">
+                        <form id="frmContact" action="" method="post">
                             <div class="col-md-6">
                                 <fieldset>
-                                    <asp:Textbox runat="server" id="txtName" CssClass="form-control" placeholder="Name..." required="true"></asp:Textbox>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-6">
                                 <fieldset>
-                                    <asp:Textbox runat="server" id="txtPhone" CssClass="form-control" placeholder="Phone..." required="true"></asp:Textbox>
+                                    <input name="phone" type="phone" class="form-control" id="email" placeholder="Your phone number..." required="">
                                 </fieldset>
                             </div>
                             <div class="col-md-12">
                                 <fieldset>
-                                    <asp:TextBox runat="server" id="txtMessage" Rows="5" TextMode="MultiLine" CssClass="form-control" placeholder="Message..." required="true"></asp:TextBox>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
                                 </fieldset>
                             </div>
                             <div class="col-md-12">
                                 <fieldset>
-                                    <asp:Button ID="btnSend" CssClass="primary-button" runat="server" Text="Send Message" OnClick="btnSendCircle_Click" />
+                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
                                 </fieldset>
                             </div>
                         </form>
